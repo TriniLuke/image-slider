@@ -6,7 +6,7 @@ Feel free to use.
 
 MIT License.
 
-<a href=''>
+<a href='https://triniluke.github.io/image-slider/'>Live Preview</a> &#128515;
 
 
 
