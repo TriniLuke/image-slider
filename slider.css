@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel {
+  width: 80vw;
+  height: 500px;
+  border: 2px inset white;
+  position: relative;
+}
+
+.carousel > ul {
+  list-style: none;
+}
+
+.slider-image { 
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.slider-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active {
+  opacity: 1;
+}
+
+.left-arrow,
+.right-arrow {
+  color: white;
+  background-color: gray;
+  font-size: large;
+  font-weight: 800;
+  height: 100%;
+  width: 10%;
+  opacity: 0.3;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  color: blue;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+.left-arrow {
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
